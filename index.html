@@ -68,11 +68,15 @@ img.Logo {
 <html>
 <head>
 <style>
-img.Menu {
+.Menu {
     position: fixed;
     z-index: 6;
     left: 9px;
     top: 14px;
+    display: inline-block;
+}
+      .Menu:hover .Dropdowncontent {
+    display: block;
 }
 </style>
 </head>
@@ -92,9 +96,6 @@ img.Menu {
  	opacity: 0.9;
   	background-color: #004F43;
     z-index: 5;;
-}
-      .Menu:hover .Dropdowncontent {
-    display: block;
 }
     </style>
 </nav>
