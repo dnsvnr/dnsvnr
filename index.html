@@ -69,30 +69,25 @@ img.Logo {
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.dropdown {
+.dropbtn {
     position: fixed;
     z-index: 6;
     left: 9px;
     top: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    position: relative;
     display: inline-block;
-  
 }
 
-.dropdown:hover .Dropdowncontent {
-    display: block;
-}
-</style>
-</head>
-<body>
-
-
-<div class="dropdown">
-  <img src="Menu,_Web_Fundamentals_(White).svg.png" width="22" height="22">
- <nav class="Dropdowncontent">
-  <style>
-  .Dropdowncontent {
-  	display: none;
+.dropdown-content {
+ 	display: none;
  	position: fixed;
 	top: 50px;
  	left: 0%;
@@ -101,13 +96,74 @@ img.Logo {
  	height: 200px;
  	opacity: 0.4;
   	background-color: #000000;
+    
 }
-</nav>
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-family: "kozuka gothic pr6n";
+    font-weight: 400; 
+    position: fixed;
+    top: 64x;
+    left: 9px;
+    paddng: 0px, 10px;
+
+}
+
+ @font-face { font-family: kozuka gothic pr6n; src: url('KozGoPr6N-Light.otf'); } 
+      dropdown-content a {
+    font-family: kozuka gothic pr6n
+}
+.dropdown a:hover .dropdown-content {
+	background-color: #ffffff;
+    opacity: 0.2;
+    position: fixed;
+    
+					
+}
+
+.show {
+	display:block
+}
+
 </style>
+</head>
+<body>
+
+<div class="dropdown">
+<img onclick="myFunction()" class="dropbtn" src="/Menu,_Web_Fundamentals_(White).svg.png" width="22" height="22"> </img>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="/">Home</a>
+    <a href="#-"> </a>
+    <a href="#-"> </a>
+  </div>
 </div>
+
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 </body>
 </html>
+
 
 
 
