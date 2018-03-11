@@ -3,155 +3,137 @@
 <link rel="icon2" href="/bigfav.png" type="image/x-icon"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <div class="dropdown">
-<button id="btnButton1" class="dropbtn" >
-</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="/">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
+   <button id="btnButton1" class="dropbtn" >
+   </button>
+   <div id="myDropdown" class="dropdown-content">
+      <a href="/">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+   </div>
 </div>
-
 <img src="http://www.dnsvnr.com/Menu.png" width="24" height="24" class="Menu" />
-
 <body>
-<a href="/"><img src="http://www.dnsvnr.com/logo.png" class="Logo" width="32" height="32"/></a>
+   <a href="/"><img src="http://www.dnsvnr.com/logo.png" class="Logo" width="32" height="32"/></a>
 </body>
-   
-<nav class="background">
-</nav>
-
-<nav class="fixedbar">
-</nav>
+<nav class="background"></nav>
+<nav class="fixedbar"></nav>
 <style>
-.Menu {
-    cursor: pointer;
-    position: fixed;
-    top: 17px;
-    left: 17px;
-    opacity: 1;
-    z-index:5;
-    color: white;
-}
-
-.dropbtn {
-    border: none;
-    cursor: pointer;
-    position: fixed;
-    top: 17px;
-    left: 17px;
-    opacity: 1;
-    background-color: transparent;
-    z-index: 6;
-    color: white;
-    width: 24px;
-    height: 24px;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    z-index: 3;
-    display: none;
-    position: fixed;
-    background-color: #000000;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
-    top: 60px;
-    opacity: 0.3;
-    width: 100%;
-    left: 0px;
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 13px 18px;
-    text-decoration: none;
-    display: block;
-    font-family: Helvetica;
-    opacity: 1
-}
-
-.dropdown a:hover {
-    color: #d9d9d9;
-}
-
-.show {
-    display:block;
-}
-
-.Logo {
-    position: fixed;
-    z-index: 6;
-    left: 50%;
-    top: 14px;
-    opacity: 1;
-    transform: translate(-50%, 0);
-}
-
-.Logo:hover, .Logo:focus {
-    opacity: 0.7;
-}
- 
-.background {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            z-index:2;
-            width: 100%;
-            height: 220%;
-            background-image:   url("http://www.dnsvnr.com/background1.jpg");
-}
-
-.fixedbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 4;
-            width: 100%;
-            height: 60px;
-            opacity: 0.2;
-            background-color: #000000;
-}
-.fixedbar {
-            box-shadow: 0px 2px 5px #3c3c3c;
-}
+   .Menu {
+   cursor: pointer;
+   position: fixed;
+   top: 17px;
+   left: 17px;
+   opacity: 1;
+   z-index:5;
+   color: white;
+   }
+   .dropbtn {
+   border: none;
+   cursor: pointer;
+   position: fixed;
+   top: 17px;
+   left: 17px;
+   opacity: 1;
+   background-color: transparent;
+   z-index: 6;
+   color: white;
+   width: 24px;
+   height: 24px;
+   }
+   .dropdown {
+   position: relative;
+   display: inline-block;
+   }
+   .dropdown-content {
+   z-index: 3;
+   display: none;
+   position: fixed;
+   background-color: #000000;
+   min-width: 160px;
+   overflow: auto;
+   box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+   top: 60px;
+   opacity: 0.3;
+   width: 100%;
+   left: 0px;
+   }
+   .dropdown-content a {
+   color: white;
+   padding: 13px 18px;
+   text-decoration: none;
+   display: block;
+   font-family: Helvetica;
+   opacity: 1
+   }
+   .dropdown a:hover {
+   color: #d9d9d9;
+   }
+   .show {
+   display:block;
+   }
+   .Logo {
+   position: fixed;
+   z-index: 6;
+   left: 50%;
+   top: 14px;
+   opacity: 1;
+   transform: translate(-50%, 0);
+   }
+   .Logo:active, .Logo:focus {
+   opacity: 0.7;
+   }
+   .background {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   z-index:2;
+   width: 100%;
+   height: 220%;
+   background-image:   url("http://www.dnsvnr.com/background1.jpg");
+   }
+   .fixedbar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 4;
+   width: 100%;
+   height: 60px;
+   opacity: 0.2;
+   background-color: #000000;
+   }
+   .fixedbar {
+   box-shadow: 0px 2px 5px #3c3c3c;
+   }
 </style>
-
 <head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	
-	<script>
-function myFunction() {
-	  $("#myDropdown").fadeIn();
-    //document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      $("#myDropdown").fadeOut();
-      /*if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }*/
-    }
-  }
-}
-
-$(function()
-{
- $("#btnButton1").click(myFunction);
-});
-	</script>
-
-</script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>
+      function myFunction() {
+      	  $("#myDropdown").fadeIn();
+          //document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+      
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            $("#myDropdown").fadeOut();
+            /*if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }*/
+          }
+        }
+      }
+      
+      $(function()
+      {
+       $("#btnButton1").click(myFunction);
+      });
+      	
+   </script>
+   </script>
 </head>
