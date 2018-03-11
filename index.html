@@ -1,173 +1,144 @@
 <link rel="icon" href="/fav.png" type="image/x-icon"/>
 <link rel="icon2" href="/bigfav.png" type="image/x-icon"/>
-
 <html>
-<head>
-    <title>dnsvnr</title>
-</head>
-<body>
-    dnsvnr
-</body>
+   <head>
+      <title>dnsvnr</title>
+   </head>
+   <body>
+      dnsvnr
+   </body>
 </html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <!DOCTYPE html>
 <html>
-<head>
-
-<nav class="fixed-dnsvnr">
-  <style>
-  .fixed-dnsvnr {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  width: 100%;
-  height: 50px;
-  opacity: 0.2;
-  background-color: #000000;
-}
-  .fixed-dnsvnr {
-     box-shadow: 0px 2px 5px #3c3c3c;
-}
-    </style>
-</nav>
-
-<nav class="background">
-  <style>
-  .background {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index:2;
-  width: 100%;
-  height: 220%;
-  background-image: url("/background1.jpg");
-}
-    </style>
-</nav>
-
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-img.Logo {
-    position: fixed;
-    z-index: 6;
-    left: 50%;
-    top: 9px;
-    transform: translate(-50%, 0);
-}
-</style>
-</head>
-	
-<body>
-<a href="#"><img src="/logo.png" class="Logo" width="32" height="32"/></a>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.dropbtn {
-    position: fixed;
-    z-index: 6;
-    left: 9px;
-    top: 14px;
-    border: none;
-    cursor: pointer;
-}
-
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
- 	display: none;
- 	position: fixed;
-	top: 50px;
- 	left: 0%;
- 	z-index: 3;
-	width: 100%;
- 	height: 200px;
- 	opacity: 0.4;
-  	background-color: #000000;
-    
-}
-
-.dropdown-content a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    font-family: "kozuka gothic pr6n";
-    font-weight: 500; 
-    position: fixed;
-    top: 53;
-    left: 9;
-    padding: 100px, 100px;
-
-}
-
- @font-face { font-family: kozuka gothic pr6n; src: url('KozGoPr6N-Light.otf'); } 
-      dropdown-content a {
-    font-family: kozuka gothic pr6n
-}
-.dropdown a:hover .dropdown-content {
-	background-color: #ffffff;
-    opacity: 0.2;
-    position: fixed;
-    
-					
-}
-
-.show {
-	display:block
-}
-
-</style>
-</head>
-<body>
-
-<div class="dropdown">
-<img onclick="myFunction()" class="dropbtn" src="/Menu,_Web_Fundamentals_(White).svg.png" width="22" height="22"> </img>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="/">Home</a>
-    <a href="#-">Test</a>
-    <a href="#-"> </a>
-  </div>
-</div>
-
-<script>
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-
-</body>
-</html>
-
-
-
-
-
-
-  
-
+   <head>
+      <nav class="fixed-dnsvnr">
+         <style>
+            .fixed-dnsvnr {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            width: 100%;
+            height: 50px;
+            opacity: 0.2;
+            background-color: #000000;
+            }
+            .fixed-dnsvnr {
+            box-shadow: 0px 2px 5px #3c3c3c;
+            }
+         </style>
+      </nav>
+      <nav class="background">
+         <style>
+            .background {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index:2;
+            width: 100%;
+            height: 220%;
+            background-image: url("/background1.jpg");
+            }
+         </style>
+      </nav>
+      <!DOCTYPE html>
+      <html>
+         <head>
+            <style>
+               img.Logo {
+               position: fixed;
+               z-index: 6;
+               left: 50%;
+               top: 9px;
+               transform: translate(-50%, 0);
+               }
+            </style>
+   </head>
+   <body>
+   <a href="#"><img src="/logo.png" class="Logo" width="32" height="32"/></a>
+   </body>
+   </html>
+   <!DOCTYPE html>
+   <html>
+      <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <style>
+            .dropbtn {
+            position: fixed;
+            z-index: 6;
+            left: 9px;
+            top: 14px;
+            border: none;
+            cursor: pointer;
+            }
+            .dropdown {
+            position: relative;
+            display: inline-block;
+            }
+            .dropdown-content {
+            display: none;
+            position: fixed;
+            top: 50px;
+            left: 0%;
+            z-index: 3;
+            width: 100%;
+            height: 200px;
+            opacity: 0.4;
+            background-color: #000000;
+            }
+            .dropdown-content a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            font-family: "kozuka gothic pr6n";
+            font-weight: 500; 
+            position: fixed;
+            top: 53;
+            left: 9;
+            padding: 100px, 100px;
+            }
+            @font-face { font-family: kozuka gothic pr6n; src: url('KozGoPr6N-Light.otf'); } 
+            dropdown-content a {
+            font-family: kozuka gothic pr6n
+            }
+            .dropdown a:hover .dropdown-content {
+            background-color: #ffffff;
+            opacity: 0.2;
+            position: fixed;
+            }
+            .show {
+            display:block
+            }
+         </style>
+      </head>
+      <body>
+         <div class="dropdown">
+            <img onclick="myFunction()" class="dropbtn" src="/Menu,_Web_Fundamentals_(White).svg.png" width="22" height="22"> </img>
+            <div id="myDropdown" class="dropdown-content">
+               <a href="/">Home</a>
+               <a href="#-">Test</a>
+               <a href="#-"> </a>
+            </div>
+         </div>
+         <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+            
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+         </script>
+      </body>
+   </html>
