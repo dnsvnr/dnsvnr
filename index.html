@@ -57,6 +57,11 @@
    </head>
    <body>
    <a href="#"><img src="/logo.png" class="Logo" width="32" height="32"/></a>
+   <script type='text/javascript'>
+   $('#goTop').on('click', function(e){
+   $("html, body").animate({scrollTop: $("#top").offset().top}, 500);
+});
+</script>
    </body>
    </html>
    <!DOCTYPE html>
