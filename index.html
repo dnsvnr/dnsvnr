@@ -1,180 +1,249 @@
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=jwL2yROogB">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=jwL2yROogB">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=jwL2yROogB">
-        <link rel="manifest" href="/site.webmanifest?v=jwL2yROogB">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg?v=jwL2yROogB" color="#5bbad5">
-        <link rel="shortcut icon" href="/favicon.ico?v=jwL2yROogB">
-        <meta name="msapplication-TileColor" content="#5bbad5">
-        <meta name="theme-color" content="#2c3238">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <head>
-    <title color="white">
-    dnsvnr </title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=jwL2yROogB">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=jwL2yROogB">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=jwL2yROogB">
-    <link rel="manifest" href="/site.webmanifest?v=jwL2yROogB">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=jwL2yROogB" color="#5bbad5">
-    <link rel="shortcut icon" href="/favicon.ico?v=jwL2yROogB">
-    <meta name="msapplication-TileColor" content="#5bbad5">
-    <meta name="theme-color" content="#5bbad5">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <div class="dropdown">
-    <button id="btnButton1" class="dropbtn" >
-    </button>
-    <img id="img"src="http://www.dnsvnr.com/Menu.png" width="24" height="24" class="Menu" />
-    <div id="myDropdown" class="dropdown-content">
-    <a href="/">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    </div>
-    </div>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=jwL2yROogB">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=jwL2yROogB">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=jwL2yROogB">
+<link rel="manifest" href="/site.webmanifest?v=jwL2yROogB">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=jwL2yROogB" color="#5bbad5">
+<link rel="shortcut icon" href="/favicon.ico?v=jwL2yROogB">
+<meta name="msapplication-TileColor" content="#5bbad5">
+<meta name="theme-color" content="#2c3238">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+   <title color="white">
+      dnsvnr 
+   </title>
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=jwL2yROogB">
+   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=jwL2yROogB">
+   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=jwL2yROogB">
+   <link rel="manifest" href="/site.webmanifest?v=jwL2yROogB">
+   <link rel="mask-icon" href="/safari-pinned-tab.svg?v=jwL2yROogB" color="#5bbad5">
+   <link rel="shortcut icon" href="/favicon.ico?v=jwL2yROogB">
+   <meta name="msapplication-TileColor" content="#5bbad5">
+   <meta name="theme-color" content="#5bbad5">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <div class="dropdown">
+      <button id="btnButton1" class="dropbtn" >
+      </button>
+      <img id="img"src="http://www.dnsvnr.com/Menu.png" width="24" height="24" class="Menu" />
+      <div id="myDropdown" class="dropdown-content">
+         <a href="/">Home</a>
+         <a href="#about">About</a>
+         <a href="#bottom">Contact</a>
+      </div>
+   </div>
 <body>
-    <a href="/"><img src="http://www.dnsvnr.com/logo.png" class="Logo" width="32" height="32"/></a>
+   <a href="/"><img src="http://www.dnsvnr.com/logo.png" class="Logo" width="32" height="32"/></a>
 </body>
-<nav class="background"></nav>
+<back class="background"></back>
 <nav class="fixedbar"></nav>
+<center id="contact" class="contact"> Contact </center>
+<center class="email"> email: </center>
+<center class="info">
+   <a href="mailto:info@dnsvnr.com">info@dnsvnr.com</a>
+</center>
+<a href="http://www.instagram.com/dnsvnr" target="_blank"><img src="http://www.dnsvnr.com/instagram-white-300x300-2.png"  class="insta" width="16" height="16"/></a>
 <style>
-    #btnButton1:hover + #img {
-    opacity: 0.7;
-    transition: opacity .3s;
-    }
-        
-    .Menu {
-    cursor: pointer;
-    position: fixed;
-    top: 17px;
-    left: 17px;
-    opacity: 1;
-    z-index:5;
-    color: white;
-    transition: opacity .3s;
-    }
-        
-    button:focus {outline:0;}
-        
-    .dropbtn {
-    border: none;
-    cursor: pointer;
-    position: fixed;
-    top: 17px;
-    left: 17px;
-    opacity: 1;
-    background-color: transparent;
-    z-index: 6;
-    color: white;
-    width: 24px;
-    height: 24px;
-    }
-        
-    .dropdown {
-    position: relative;
-    display: inline-block;
-    }
-        
-    .dropdown-content {
-    z-index: 3;
-    display: none;
-    position: fixed;
-    background-color: #000000;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
-    top: 60px;
-    opacity: 0.4;
-    width: 100%;
-    left: 0px;
-    }
-        
-    .dropdown-content a {
-    color: white;
-    padding: 13px 18px;
-    text-decoration: none;
-    display: block;
-    font-family: Helvetica;
-    font-weight: 200;
-    opacity: 1;
-    transition: color .3s;
-    }
-        
-    .dropdown a:hover {
-    color: #a3a3a3;
-    transition: color .3s;
-    }
-        
-    .show {
-    display:block;
-    }
-        
-    .Logo {
-    position: fixed;
-    z-index: 6;
-    left: 50%;
-    top: 14px;
-    opacity: 1;
-    transform: translate(-50%, 0);
-    transition: opacity .3s
-    }
-        
-    .Logo:hover, .Logo:focus {
-    opacity: 0.7;
-    transition: opacity .3s
-    }
-        
-    .background {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index:2;
-    width: 100%;
-    height: 2360px;
-    background-image:   url("http://www.dnsvnr.com/background1.jpg");
-    }
-        
-    .fixedbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 4;
-    width: 100%;
-    height: 60px;
-    opacity: 0.2;
-    background-color: #000000;
-    }
-        
-    .fixedbar {
-    box-shadow: 0px 2px 5px #3c3c3c;
-    }
+   #btnButton1:hover + #img {
+   opacity: 0.7;
+   transition: opacity .3s;
+   }
+   .Menu {
+   cursor: pointer;
+   position: fixed;
+   top: 17px;
+   left: 17px;
+   opacity: 1;
+   z-index:5;
+   color: white;
+   transition: opacity .3s;
+   }
+   button:focus {outline:0;}
+   .dropbtn {
+   border: none;
+   cursor: pointer;
+   position: fixed;
+   top: 17px;
+   left: 17px;
+   opacity: 1;
+   background-color: transparent;
+   z-index: 6;
+   color: white;
+   width: 24px;
+   height: 24px;
+   }
+   .dropdown {
+   position: relative;
+   display: inline-block;
+   }
+   .dropdown-content {
+   z-index: 3;
+   display: none;
+   position: fixed;
+   background-color: #000000;
+   min-width: 160px;
+   overflow: auto;
+   box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+   top: 60px;
+   opacity: 0.4;
+   width: 100%;
+   left: 0px;
+   }
+   .dropdown-content a {
+   color: white;
+   padding: 13px 18px;
+   text-decoration: none;
+   display: block;
+   font-family: Helvetica;
+   font-weight: 200;
+   opacity: 1;
+   transition: color .3s;
+   }
+   .dropdown a:hover {
+   color: #a3a3a3;
+   transition: color .3s;
+   }
+   .show {
+   display:block;
+   }
+   .Logo {
+   position: fixed;
+   z-index: 6;
+   left: 50%;
+   top: 14px;
+   opacity: 1;
+   transform: translate(-50%, 0);
+   transition: opacity .3s;
+   }
+   .Logo:hover, .Logo:focus {
+   opacity: 0.7;
+   transition: opacity .3s;
+   }
+   .background {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   z-index:2;
+   width: 100%;
+   height: 2323px;
+   background-image:   url("http://www.dnsvnr.com/background1.jpg");
+   }
+   .fixedbar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 4;
+   width: 100%;
+   height: 60px;
+   opacity: 0.2;
+   background-color: #000000;
+   }
+   .fixedbar {
+   box-shadow: 0px 2px 5px #3c3c3c;
+   }
+   .contact {
+   position: absolute;
+   z-index: 6;
+   top: 2196px;
+   left: 50%;
+   font-family: Helvetica;
+   color: white;
+   font-size: 16px;
+   transform: translate(-50%, 0);
+   opacity: 0.9;
+   font-weight: 200;
+   }
+   .email {
+   position: absolute;
+   z-index: 6;
+   top: 2240px;
+   left: 41.5%;
+   font-family: Helvetica;
+   color: white;
+   font-size: 14px;
+   transform: translate(-50%, 0);
+   opacity: 0.9;
+   font-weight: 200;
+   }
+   .info {
+   position: absolute;
+   z-index: 6;
+   top: 2240px;
+   left: 55.5%;
+   font-family: Helvetica;
+   color: white;
+   font-size: 14px;
+   transform: translate(-50%, 0);
+   opacity: 0.9;
+   text-decoration: none;
+   font-weight: 200;
+   }
+   .info a:link {
+   color: white;
+   text-decoration: none;
+   }
+   .info a:visited {
+   color: white;
+   text-decoration: none;
+   }
+   .info a:hover {
+   color: white;
+   text-decoration: none;
+   }
+   .info a:active {
+   color: white;
+   text-decoration: none;
+   }
+   .insta {
+   position: absolute;
+   z-index: 6;
+   top: 2283px;
+   left: 50%;
+   transform: translate(-50%, 0);
+   opacity: 0.9;
+   transition: opacity .3s;
+   }
+   .insta:hover, .insta:focus {
+   opacity: 0.6;
+   transition: opacity .3s;
+   }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-    function myFunction() {
-        if($("#myDropdown").is(":visible")){
-            $("#myDropdown").fadeOut(); 
-        } else {
-            $("#myDropdown").fadeIn();
-        //document.getElementById("myDropdown").classList.toggle("show");
-        }
-    }
-    
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn')) {
-    
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          $("#myDropdown").fadeOut();
-          /*if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }*/
-        }
-      }
-    }
-    
-    $(function()
-    {
-     $("#btnButton1").click(myFunction);
-    });
-      
+   function myFunction() {
+       if($("#myDropdown").is(":visible")){
+           $("#myDropdown").fadeOut(); 
+       } else {
+           $("#myDropdown").fadeIn();
+       //document.getElementById("myDropdown").classList.toggle("show");
+       }
+   }
+   
+   window.onclick = function(event) {
+     if (!event.target.matches('.dropbtn')) {
+   
+       var dropdowns = document.getElementsByClassName("dropdown-content");
+       var i;
+       for (i = 0; i < dropdowns.length; i++) {
+         var openDropdown = dropdowns[i];
+         $("#myDropdown").fadeOut();
+         /*if (openDropdown.classList.contains('show')) {
+           openDropdown.classList.remove('show');
+         }*/
+       }
+     }
+   }
+   
+   $(function()
+   {
+    $("#btnButton1").click(myFunction);
+   });
+   
+   $("a[href='#bottom']").click(function() {
+   $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+   return false;
+   });
+   
+   $("a[href='#top']").click(function() {
+   $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+   return false;
+   });
 </script>
