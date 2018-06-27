@@ -33,7 +33,23 @@
 </center>
 <a href="http://www.instagram.com/dnsvnr" target="_blank"><img src="http://www.dnsvnr.com/insta.png"   class="insta" width="16" height="16"/></a>
 <nav class="contactb"></nav>
+
+<a class="Phil"> Philosophical thoughts.</a>
+
 <style>
+    .Phil {
+    z-index: 3;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 30%;
+    color: #ffffff;
+    font-family: Helvetica;
+    font-size: 16px;
+    transform: translate(-50%, 0);
+    font-weight: 200;
+    
+    }
     #btnButton1:hover + #img {
     opacity: 0.7;
     transition: opacity .3s;
@@ -116,7 +132,7 @@
     z-index:2;
     width: 100%;
     height: 2322px;
-    background-color: #ffffff;
+    background-color: #5BBAD6;
     }
     .fixedbar {
     position: fixed;
@@ -125,8 +141,10 @@
     z-index: 4;
     width: 100%;
     height: 60px;
-    opacity: 0.80;
-    background-color: #000000;
+    opacity: 0.90;
+    background-color: #112a30;
+    -webkit-backdrop-filter: blur(5px);
+    
     }
     .contact {
     position: absolute;
@@ -173,7 +191,7 @@
     top: 2278px;
     left: 50%;
     transform: translate(-50%, 0);
-    transition: filter .3s;
+    transition: opacity .3s;
     opacity: 1
     }
     .insta:hover, .insta:focus {
@@ -190,6 +208,7 @@
     z-index: 5;
     }
 </style>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
     function myFunction() {
@@ -231,3 +250,6 @@
     return false;
     });
 </script>
+
+
+
