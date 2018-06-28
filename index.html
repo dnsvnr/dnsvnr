@@ -206,7 +206,7 @@
    z-index: 2;
    }
 </style>
-<script src=http://code.jquery.com/jquery-latest.min.js></script>
+<script src=http://code.jquery.com/jquery-latest.min.js></script> 
 <script>
    function myFunction() {
     if($("#myDropdown").is(":visible")){
@@ -239,7 +239,9 @@
    });
    
    $("a[href='#']").click(function() {
-   $("html, body").animate({ scrollTop: $(functionid).height() }, "slow");
+   $("html, body").animate({ scrollTop: 0 }, "fast");
    return false;
    });
+   
+   
 </script>
