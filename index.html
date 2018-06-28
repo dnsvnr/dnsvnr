@@ -18,7 +18,7 @@
       <img id="img"src="http://www.dnsvnr.com/Menu.png" width="24" height="24" class="Menu" />
       <div id="myDropdown" class="dropdown-content">
          <a href="/">Home</a>
-         <a       href="#top">Explore</a>
+         <a       href="#top" id="functiontop">Explore</a>
          <a href="#bottom">Contact</a>
       </div>
    </div>
@@ -235,7 +235,7 @@
     return false;
     });
     
-    $("a[href='#top']").click(function() {
+    $("a[href='#top']").click(functiontop() {
     $("html, body").animate({ scrollTop: $(document).height() }, "slow");
     return false;
     });
