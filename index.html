@@ -1,7 +1,8 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
    <title color="white">
-      dnsvnr 
+      dnsvnr
    </title>
    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=jwL2yROogB">
    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=jwL2yROogB">
@@ -13,9 +14,9 @@
    <meta name="theme-color" content="#5bbad5">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <div class="dropdown">
-      <button id="btnButton1" class="dropbtn" >
+      <button id="btnButton1" class="dropbtn">
       </button>
-      <img id="img"src="http://www.dnsvnr.com/Menu.png" width="24" height="24" class="Menu" />
+      <img id="img" src="http://www.dnsvnr.com/Menu.png" width="24" height="24" class="Menu" />
       <div id="myDropdown" class="dropdown-content">
          <a href="/">Home</a>
          <a id="functionid" href="#">Explore</a>
@@ -33,9 +34,10 @@
 </center>
 <a href="http://www.instagram.com/dnsvnr" target="_blank"><img src="http://www.dnsvnr.com/insta.png"   class="insta" width="16" height="16"/></a>
 <nav class="contactb"></nav>
-<img class="back" src="http://s3-eu-west-1.amazonaws.com/fthtsi-assets-production/ez/images/8/3/6/5/125638-1-eng-GB/main_6e766fc6-3097-4df1-93a9-4228f60f2f27.jpg"> 
+<img class="back" src="http://s3-eu-west-1.amazonaws.com/fthtsi-assets-production/ez/images/8/3/6/5/125638-1-eng-GB/main_6e766fc6-3097-4df1-93a9-4228f60f2f27.jpg">
+<a class=explore>E X P L O R E      .</a>
 <style>
-   #btnButton1:hover + #img {
+   #btnButton1:hover+#img {
    opacity: 0.7;
    transition: opacity .3s;
    }
@@ -49,11 +51,13 @@
    top: 17px;
    left: 17px;
    opacity: 1;
-   z-index:5;
+   z-index: 5;
    color: white;
    transition: opacity .3s;
    }
-   button:focus {outline:0;}
+   button:focus {
+   outline: 0;
+   }
    .dropbtn {
    border: none;
    cursor: pointer;
@@ -78,7 +82,7 @@
    background-color: #141414;
    min-width: 160px;
    overflow: auto;
-   box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
    top: 60px;
    width: 100%;
    left: 0px;
@@ -102,7 +106,7 @@
    transition: color .3s;
    }
    .show {
-   display:block;
+   display: block;
    }
    .Logo {
    position: fixed;
@@ -113,7 +117,8 @@
    transform: translate(-50%, 0);
    transition: opacity .3s;
    }
-   .Logo:hover, .Logo:focus {
+   .Logo:hover,
+   .Logo:focus {
    opacity: 0.7;
    transition: opacity .3s;
    }
@@ -140,6 +145,19 @@
    -webkit-backdrop-filter: blur(4px);
    backdrop-filter: blur(4px);
    background-color: rgba(0, 0, 0, 0.7);
+   }
+   .explore {
+   font-family: arial;
+   font-decoration: bold;
+   font-weight: 800;
+   top: 50%;
+   left: 50%;
+   Z-index: 2;
+   margin-top: -6px;
+   color: white;
+   font-size: 32px;
+   position: absolute;
+   transform: translate(-50%, 0%);
    }
    .contact {
    margin-top: 36px;
@@ -192,7 +210,8 @@
    transition: filter .3s;
    opacity: 1
    }
-   .insta:hover, .insta:focus {
+   .insta:hover,
+   .insta:focus {
    opacity: 0.7;
    transition: opacity .3s;
    }
@@ -206,42 +225,43 @@
    z-index: 2;
    }
 </style>
-<script src=http://code.jquery.com/jquery-latest.min.js></script> 
 <script>
    function myFunction() {
-    if($("#myDropdown").is(":visible")){
-        $("#myDropdown").fadeOut(); 
-    } else {
-        $("#myDropdown").fadeIn();
-    }
+   if ($("#myDropdown").is(":visible")) {
+   $("#myDropdown").fadeOut("fast");
+   } else {
+   $("#myDropdown").fadeIn("fast");
+   }
    }
    
    window.onclick = function(event) {
    if (!event.target.matches('.dropbtn')) {
    
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      $("#myDropdown").fadeOut();
-    }
+   var dropdowns = document.getElementsByClassName("dropdown-content");
+   var i;
+   for (i = 0; i < dropdowns.length; i++) {
+   var openDropdown = dropdowns[i];
+   $("#myDropdown").fadeOut("fast");
+   }
    }
    }
    
-   $(function()
-   {
+   $(function() {
    $("#btnButton1").click(myFunction);
    });
    
    $("a[href='#bottom']").click(function() {
-   $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+   $("html, body").animate({
+   scrollTop: $(document).height()
+   }, "slow");
    return false;
    });
    
    $("a[href='#']").click(function() {
-   $("html, body").animate({ scrollTop: 0 }, "fast");
+   $("html, body").animate({
+   scrollTop: 0
+   }, "fast");
    return false;
    });
-   
    
 </script>
