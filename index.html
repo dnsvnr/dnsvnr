@@ -18,8 +18,8 @@
       <img id="img"src="http://www.dnsvnr.com/Menu.png" width="24" height="24" class="Menu" />
       <div id="myDropdown" class="dropdown-content">
          <a href="/">Home</a>
-         <a       href="#explore">Explore</a>
-         <a href="#bottom">Contact</a>
+         <a id="functionid" href="#">Explore</a>
+         <a id="document" href="#bottom">Contact</a>
       </div>
    </div>
 <body>
@@ -34,7 +34,6 @@
 <a href="http://www.instagram.com/dnsvnr" target="_blank"><img src="http://www.dnsvnr.com/insta.png"   class="insta" width="16" height="16"/></a>
 <nav class="contactb"></nav>
 <img class="back" src="http://s3-eu-west-1.amazonaws.com/fthtsi-assets-production/ez/images/8/3/6/5/125638-1-eng-GB/main_6e766fc6-3097-4df1-93a9-4228f60f2f27.jpg"> 
-<style>
 <style>
    #btnButton1:hover + #img {
    opacity: 0.7;
@@ -207,14 +206,13 @@
    z-index: 2;
    }
 </style>
-</script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src=http://code.jquery.com/jquery-latest.min.js></script>
 <script>
    function myFunction() {
     if($("#myDropdown").is(":visible")){
         $("#myDropdown").fadeOut(); 
     } else {
         $("#myDropdown").fadeIn();
-    //document.getElementById("myDropdown").classList.toggle("show");
     }
    }
    
@@ -226,9 +224,6 @@
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
       $("#myDropdown").fadeOut();
-      /*if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }*/
     }
    }
    }
@@ -243,8 +238,8 @@
    return false;
    });
    
-   $("a[href='#top']").click(function() {
-   $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+   $("a[href='#']").click(function() {
+   $("html, body").animate({ scrollTop: $(functionid).height() }, "slow");
    return false;
    });
 </script>
