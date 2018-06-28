@@ -33,57 +33,41 @@
 </center>
 <a href="http://www.instagram.com/dnsvnr" target="_blank"><img src="http://www.dnsvnr.com/insta.png"   class="insta" width="16" height="16"/></a>
 <nav class="contactb"></nav>
-<img class="back" src="http://s3-eu-west-1.amazonaws.com/fthtsi-assets-production/ez/images/8/3/6/5/125638-1-eng-GB/main_6e766fc6-3097-4df1-93a9-4228f60f2f27.jpg" </img>
+<img class="back" src="http://s3-eu-west-1.amazonaws.com/fthtsi-assets-production/ez/images/8/3/6/5/125638-1-eng-GB/main_6e766fc6-3097-4df1-93a9-4228f60f2f27.jpg"> 
 <style>
-   .NOT IN USE background {
-   position: absolute;
-   top: 0px;
-   left: 0px;
-   z-index:2;
-   width: 100%;
-   }
-   .fixedbar {
-   position: fixed;
-   top: 0;
-   left: 0;
-   z-index: 7;
-   width: 100%;
-   height: 60px;
-   -webkit-backdrop-filter: blur(4px);
-   backdrop-filter: blur(4px);
-   background-color: rgba(0, 0, 0, 0.7);
-   }
-   .Menu {
-   cursor: pointer;
-   position: fixed;
-   top: 17px;
-   left: 17px;
-   opacity: 1;
-   z-index:8;
-   color: white;
-   transition: opacity .3s;
-   }
-   button:focus {outline:0;}
-   .dropbtn {
-   border: none;
-   cursor: pointer;
-   position: fixed;
-   top: 17px;
-   left: 17px;
-   opacity: 1;
-   background-color: transparent;
-   z-index: 6;
-   color: white;
-   width: 24px;
-   height: 24px;
-   }
-   #btnButton1:hover + #img {
-   opacity: 0.7;
-   transition: opacity .3s;
-   }
-   .dropdown {
-   position: relative;
-   }
+<style>
+    #btnButton1:hover + #img {
+    opacity: 0.7;
+    transition: opacity .3s;
+    }
+    .Menu {
+    cursor: pointer;
+    position: fixed;
+    top: 17px;
+    left: 17px;
+    opacity: 1;
+    z-index:5;
+    color: white;
+    transition: opacity .3s;
+    }
+    button:focus {outline:0;}
+    .dropbtn {
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 17px;
+    left: 17px;
+    opacity: 1;
+    background-color: transparent;
+    z-index: 6;
+    color: white;
+    width: 24px;
+    height: 24px;
+    }
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
    .dropdown-content {
    z-index: 3;
    display: none;
@@ -99,137 +83,159 @@
    backdrop-filter: blur(3px);
    background-color: rgba(0, 0, 0, 0.6);
    }
-   .dropdown-content a {
-   color: white;
-   padding: 13px 18px;
-   text-decoration: none;
-   display: block;
-   font-family: Helvetica;
-   font-weight: 200;
-   transition: color .3s;
-   }
-   .dropdown a:hover {
-   color: #a3a3a3;
-   transition: color .3s;
-   }
-   .show {
-   display:block;
-   }
-   .Logo {
-   position: fixed;
-   z-index: 8;
-   left: 50%;
-   top: 14px;
-   opacity: 1;
-   transform: translate(-50%, 0);
-   transition: opacity .3s;
-   }
-   .Logo:hover, .Logo:focus {
-   opacity: 0.7;
-   transition: opacity .3s;
-   }
+    .dropdown-content a {
+    color: white;
+    padding: 13px 18px;
+    text-decoration: none;
+    display: block;
+    font-family: Helvetica;
+    font-weight: 200;
+    opacity: 1;
+    transition: color .3s;
+    letter-spacing: 2px;
+    }
+    .dropdown a:hover {
+    color: #a3a3a3;
+    transition: color .3s;
+    }
+    .show {
+    display:block;
+    }
+    .Logo {
+    position: fixed;
+    z-index: 6;
+    left: 50%;
+    top: 14px;
+    opacity: 1;
+    transform: translate(-50%, 0);
+    transition: opacity .3s;
+    }
+    .Logo:hover, .Logo:focus {
+    opacity: 0.7;
+    transition: opacity .3s;
+    }
+    
    .back {
    left: 0%;
    top: 0px;
    position: fixed;
    z-index: 2;
    position: absolute;
-   width: 100%;
-   height: 100%
+   width: 200%;
+   height: 200%;
    transform: translate(-50%, 0);
    }
-   .contact {
-   position: absolute;
-   z-index: 6;
-   top: 888px;
-   left: 50%;
-   font-family: Helvetica;
-   color: black;
-   font-size: 16px;
-   transform: translate(-50%, 0);
-   font-weight: 200;
-   }
-   .info {
-   position: absolute;
-   z-index: 6;
-   top: 930px;
-   left: 50%;
-   font-family: Helvetica;
-   color: black;
-   font-size: 14px;
-   transform: translate(-50%, 0);
-   text-decoration: none;
-   font-weight: 200;
-   }
-   .info a:link {
-   color: black;
-   text-decoration: none;
-   }
-   .info a:visited {
-   color: black;
-   text-decoration: none;
-   }
-   .info a:hover {
-   color: black;
-   text-decoration: underline;
-   }
-   .info a:active {
-   color: black;
-   text-decoration: none;
-   }
-   .insta {
-   position: absolute;
-   z-index: 6;
-   top: 970px;
-   left: 50%;
-   transform: translate(-50%, 0);
-   transition: opacity .3s;
-   opacity: 1
-   }
-   .insta:hover, .insta:focus {
-   opacity: 0.7;
-   transition: opacity .3s;
-   }
-   .contactb {
-   background-color: #f2f2f2;
-   top: 852px;
-   width: 100%;
+   .fixedbar {
+   position: fixed;
+   top: 0;
    left: 0;
-   height: 162px;
-   position: absolute;
-   z-index: 5;
+   z-index: 4;
+   width: 100%;
+   height: 60px;
+   -webkit-backdrop-filter: blur(4px);
+   backdrop-filter: blur(4px);
+   background-color: rgba(0, 0, 0, 0.7);
    }
-</style>
-
+    .contact {
+    position: absolute;
+    z-index: 6;
+    top: 2196px;
+    left: 50%;
+    font-family: Helvetica;
+    color: black;
+    font-size: 16px;
+    transform: translate(-50%, 0);
+    font-weight: 200;
+    }
+    .info {
+    position: absolute;
+    z-index: 6;
+    top: 2238px;
+    left: 50%;
+    font-family: Helvetica;
+    color: black;
+    font-size: 14px;
+    transform: translate(-50%, 0);
+    text-decoration: none;
+    font-weight: 200;
+    }
+    .info a:link {
+    color: black;
+    text-decoration: none;
+    }
+    .info a:visited {
+    color: black;
+    text-decoration: none;
+    }
+    .info a:hover {
+    color: black;
+    text-decoration: underline;
+    }
+    .info a:active {
+    color: black;
+    text-decoration: none;
+    }
+    .insta {
+    position: absolute;
+    z-index: 6;
+    top: 2278px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: filter .3s;
+    opacity: 1
+    }
+    .insta:hover, .insta:focus {
+    opacity: 0.7;
+    transition: opacity .3s;
+    }
+    .contactb {
+    background-color: #f2f2f2;
+    top: 2160px;
+    width: 100%;
+    left: 0;
+    height: 162px;
+    position: absolute;
+    z-index: 5;
+    }
+   </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-function myFunction() {
-if($("#myDropdown").is(":visible")){
-$("#myDropdown").fadeOut(); 
-} else {
-$("#myDropdown").fadeIn();
-}
-}
-window.onclick = function(event) {
-if (!event.target.matches('.dropbtn')) {
-var dropdowns = document.getElementsByClassName("dropdown-content");
-var i;
-for (i = 0; i < dropdowns.length; i++) {
-var openDropdown = dropdowns[i];
-$("#myDropdown").fadeOut();
-}
-}
-}
-$(function()
-{
-$("#btnButton1").click(myFunction);
-});
-$("a[href='#bottom']").click(function() {
-$("html, body").animate({ scrollTop: $(document).height() }, "slow");
-return false;
-});
-$("a[href='#top']").click(function() {
-$("html, body").animate({ scrollTop: $(document).height() }, "slow");
-return false;
-});
+    function myFunction() {
+     if($("#myDropdown").is(":visible")){
+         $("#myDropdown").fadeOut(); 
+     } else {
+         $("#myDropdown").fadeIn();
+     //document.getElementById("myDropdown").classList.toggle("show");
+     }
+    }
+    
+    window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+    
+     var dropdowns = document.getElementsByClassName("dropdown-content");
+     var i;
+     for (i = 0; i < dropdowns.length; i++) {
+       var openDropdown = dropdowns[i];
+       $("#myDropdown").fadeOut();
+       /*if (openDropdown.classList.contains('show')) {
+         openDropdown.classList.remove('show');
+       }*/
+     }
+    }
+    }
+    
+    $(function()
+    {
+    $("#btnButton1").click(myFunction);
+    });
+    
+    $("a[href='#bottom']").click(function() {
+    $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+    return false;
+    });
+    
+    $("a[href='#top']").click(function() {
+    $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+    return false;
+    });
 </script>
