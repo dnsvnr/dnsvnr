@@ -18,9 +18,11 @@
       </button>
       <img id="img" src="http://www.dnsvnr.com/Menu.png" width="24" height="24" class="Menu" />
       <div id="myDropdown" class="dropdown-content">
-         <a href="/">Home</a>
-         <a id="functionid" href="#">Search</a>
-         <a id="document" href="#bottom">Contact</a>
+      <back class="twee" id="twee"> </back>
+         <a class="vier" href="/">Home</a>
+         <a class="vijf" id="functionid" href="#">Search</a>
+         <a class="zes" id="document" href="#bottom">Contact</a>
+         
       </div>
    </div>
 <body>
@@ -36,7 +38,30 @@
 <nav class="contactb"></nav>
 <img class="back" src="https://www.studioduel.nl/wp-content/uploads/2015/01/Background-nieuws.png">
 <a class=explore  href="http://www.dnsvnr.com/explore">Search.</a>
+
+
 <style>
+   .vier
+   {
+   margin-top: 52;
+   z-index: 70;
+   opacity: 1;
+   }
+   
+      .vijf
+   {
+   margin-top: 5px;
+   z-index: 70;
+   opacity: 1;
+   }
+   
+      .zes
+   {
+   margin-top: 5px;
+   z-index: 70;
+   opacity: 1;
+   }
+   
    #btnButton1:hover+#img {
    opacity: 0.7;
    transition: opacity .3s;
@@ -77,12 +102,10 @@
    }
    .dropdown-content {
    height: 186px;
-   opacity: 0.9;
-   z-index: 3;
+   opacity: 0.7;
+   z-index: 4;
    display: none;
    position: fixed;
-   background-color: #141414;
-   min-width: 160px;
    overflow: auto;
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
    top: 0px;
@@ -92,9 +115,28 @@
    backdrop-filter: blur(2px);
    background-color: rgba(0, 0, 0, 0.6);
    }
+   
+   .twee {
+   height: 186px;
+   opacity: 0.9;
+   z-index: 3;
+   display: none;
+   position: fixed;
+   overflow: auto;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+   top: 0px;
+   margin-top: 0px;
+   width: 100%;
+   left: 0px;
+   -webkit-backdrop-filter: blur(2px);
+   backdrop-filter: blur(2px);
+   background-color: rgba(0, 0, 0, 0.6);
+   }
+   
    .dropdown-content  a {
+   top: 0px;
    color: white;
-   padding: 85px 18px;
+   padding: 5px 18px;
    text-decoration: none;
    display: block;
    font-family: Helvetica;
@@ -103,8 +145,9 @@
    transition: color .3s;
    letter-spacing: 2px;
    fontsize: 16px;
-   text-aign: center;
-   transform: translate(-50%, 0);
+   text-align: center;
+   trnsform: translate(-50%, 0);
+   z-index: 5
    }
    .dropdown a:hover {
    color: #a3a3a3;
@@ -297,5 +340,8 @@
    }, "fast");
    return false;
    });
+   
+
+
    
 </script>
