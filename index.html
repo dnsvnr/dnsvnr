@@ -41,10 +41,22 @@
 <a class=explore  href="http://www.dnsvnr.com/explore">find.</a>
 
  <a href="index.html#arrow""> <img class="arrow" src="http://www.dnsvnr.com/img_229681.png" id-"arrow"> </a>
-
+<nav class="bar"> </nav>
 
 <style>
-
+.bar
+{
+   opacity: 1;
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   z-index: 1;
+   width: 100%;
+   height: 60px;
+   -webkit-backdrop-filter: blur(2px);
+   backdrop-filter: blur(4px);
+   background-color: black;
+}
   .arrow
   {
    transform: translate(-50%, 0);
