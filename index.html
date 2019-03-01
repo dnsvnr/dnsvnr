@@ -20,7 +20,7 @@
       <div id="myDropdown" class="dropdown-content">
       <back class="twee" id="twee"> </back>
          <a class="vier" href="/">Home</a>
-         <a class="vijf" id="functionid" href="#">Search</a>
+         <a class="vijf" id="functionid" href="#">Find</a>
          <a class="zes" id="document" href="#bottom">Contact</a>
          
       </div>
@@ -36,11 +36,40 @@
 </center>
 <a href="http://www.instagram.com/dnsvnr" target="_blank"><img src="http://www.dnsvnr.com/insta.png"   class="insta" width="16" height="16"/></a>
 <nav class="contactb"></nav>
-<img class="back" src="https://https://github.com/dnsvnr/dnsvnr.github.io/blob/master/wijnstok-behang-3840x2400-11109_9.jpg?raw=true">
-<a class=explore  href="http://www.dnsvnr.com/explore">Search.</a>
+
+<img class="back" src="https://images.wallpaperscraft.com/image/starry_sky_milky_way_stars_night_118495_3840x2400.jpg">
+<a class=explore  href="http://www.dnsvnr.com/explore">find.</a>
+
+ <img class="arrow" src="http://www.dnsvnr.com/img_229681.png" id-"arrow">
 
 
 <style>
+
+  .arrow
+  {
+   transform: translate(-50%, 0);
+   left: 50%;
+   top: 91%;
+   position: fixed;
+   z-index: 4;
+   position: absolute;
+   width: 20px;
+   height: 10px;
+   filter: brightness(200%);
+   transition: opacity .3s;
+  }
+ 
+
+   .arrow:hover {
+   cursor: hand;
+   opacity: 0.7;
+   transition: opacity .3s;
+  
+   }
+   .arrow a:active {
+   color: white;
+   text-decoration: none;
+   }
    .vier
    {
    margin-top: 56;
@@ -58,7 +87,7 @@
       .zes
    {
    margin-top: 5px;
-   z-index: 70;
+   z-index: 8;
    opacity: 1;
    }
    
@@ -199,48 +228,29 @@
    }
    .explore {
    font-family: Arial;
-   font-decoration: bold;
    font-weight: 600;
-   top: 75%;
+   top: 82.5%;
    left: 50%;
    Z-index: 2;
    margin-top: -6px;
    color: white;
    font-size: 32px;
    position: absolute;
-   transform: translate(-50%, 0%);
-   margin-left: 10px;
+   transform: translate(-50%, 0);
+   margin-left: 4px;
    text-decoration: none;
    transition: margin-top .3s;
-   cursor: none;
+   cursor: default;
+   transition: opacity: 3s;
    font-style: italic;
+   opacity: 1;
    }
-   .explore a:link {
-   color: black;
-   text-decoration: none;
-   }
-   .explore a:visited {
-   color: white;
-   text-decoration: none;
-   }
-   .explore:hover {
-   font-family: Arial;
-   margin-top: -60px;
-   font-size: 32px;
-   text-decoration: none;
-   transition: margin-top .3s;
-   cursor: none;
-  
-   }
-   .explore a:active {
-   color: white;
-   text-decoration: none;
-   }
+   
    .contact {
    margin-top: 38px;
    position: absolute;
    z-index: 3;
-   top: 100%;
+   top: 200%;
    left: 50%;
    font-family: Helvetica;
    color: black;
@@ -251,7 +261,7 @@
    .info {
    position: absolute;
    z-index: 6;
-   top: 100%;
+   top: 200%;
    margin-top: 78px;
    left: 50%;
    font-family: Helvetica;
@@ -280,7 +290,7 @@
    .insta {
    position: absolute;
    z-index: 6;
-   top: 100%;
+   top: 200%;
    margin-top: 118px;
    left: 50%;
    transform: translate(-50%, 0);
@@ -294,7 +304,7 @@
    }
    .contactb {
    background-color: #f2f2f2;
-   top: 100%;
+   top: 200%;
    width: 100%;
    left: 0;
    height: 162px;
