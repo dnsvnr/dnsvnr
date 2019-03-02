@@ -18,14 +18,19 @@
       </button>
       <img id="img" src="http://www.dnsvnr.com/Menu.png" width="24" height="24" class="Menu" />
       <div id="myDropdown" class="dropdown-content">
-      <back class="twee" id="twee"> </back>
+         <back class="twee" id="twee"> </back>
          <a class="vier" href="#home">Home</a>
          <a class="vijf" id="functionid" href="#find">Find</a>
          <a class="zes" id="document" href="#bottom">Contact</a>
-         
       </div>
    </div>
+   <navbar>
+      <u>
+      <img class="bar" src="http://www.dnsvnr.com/fdags.png" />
+      </u>
+   </navbar>
 <body>
+   <a id="verse" class="verse"> Matthew 19:24 NIV </a>
    <a href="#logo"><img src="http://www.dnsvnr.com/logo.png" class="Logo" width="32" height="32"/></a>
 </body>
 <back class="background"></back>
@@ -36,30 +41,36 @@
 </center>
 <a href="http://www.instagram.com/dnsvnr" target="_blank"><img src="http://www.dnsvnr.com/insta.png"   class="insta" width="16" height="16"/></a>
 <nav class="contactb"></nav>
-
 <img class="back" src="http://www.dnsvnr.com/gsdfajo.png">
 <a class=explore> "Again I tell you, it is easier for a camel to go through the eye of a needle than for someone who is rich to enter the kingdom of God."</a>
-
- <a href="#arrow""> <img class="arrow" src="http://www.dnsvnr.com/img_229681.png" id-"arrow"> </a>
-<nav class="bar" src="http://www.dnsvnr.com/fdags.png" > </nav>
-
+<a href="#arrow""> <img class="arrow" src="http://www.dnsvnr.com/img_229681.png" id="arrow"> </a>
 <style>
-
-.bar
-{
-   opacity: 1;
+   .verse
+   {
    position: fixed;
-   top: 0px;
-   left: 0px;
+   top: 11px;
+   right: 11px;
+   font-size: 32px;
+   z-index: 5;
+   color: white;
+   font-family: Gill Sans;
+   text-align: centre;
+   overflow: hidden;
+   max-height: 40px;
+   min-wdth: 300px;
+   display: none;
+   }
+   .bar
+   {
+   position: fixed;
+   top: 0;
    z-index: 1;
+   left: 0%;
    width: 100%;
    height: 60px;
-   -webkit-backdrop-filter: blur(2px);
-   backdrop-filter: blur(4px);
-   background-image: url("http://www.dnsvnr.com/fdags.png");
-}
-  .arrow
-  {
+   }
+   .arrow
+   {
    transform: translate(-50%, 0);
    left: 50%;
    top: 95%;
@@ -70,14 +81,11 @@
    height: 10px;
    filter: brightness(200%);
    transition: opacity .3s;
-  }
- 
-
+   }
    .arrow:hover {
    cursor: hand;
    opacity: 0.7;
    transition: opacity .3s;
-  
    }
    .arrow a:active {
    color: white;
@@ -89,21 +97,18 @@
    z-index: 70;
    opacity: 1;
    }
-   
-      .vijf
+   .vijf
    {
    margin-top: 5px;
    z-index: 70;
    opacity: 1;
    }
-   
-      .zes
+   .zes
    {
    margin-top: 5px;
    z-index: 8;
    opacity: 1;
    }
-   
    #btnButton1:hover+#img {
    opacity: 0.7;
    transition: opacity .3s;
@@ -122,7 +127,7 @@
    color: white;
    transition: opacity .3s;
    }
-   button:focus {
+   .button:focus {
    outline: 0;
    }
    .dropbtn {
@@ -157,7 +162,6 @@
    backdrop-filter: blur(2px);
    background-color: rgba(0, 0, 0, 0.6);
    }
-   
    .twee {
    height: 186px;
    opacity: 0.9;
@@ -174,7 +178,6 @@
    backdrop-filter: blur(2px);
    background-color: rgba(0, 0, 0, 0.6);
    }
-   
    .dropdown-content  a {
    top: 0px;
    color: white;
@@ -198,7 +201,6 @@
    .show {
    display: block;
    }
-   
    .Logo {
    position: fixed;
    z-index: 6;
@@ -208,7 +210,6 @@
    transform: translate(-50%, 0);
    transition: opacity .3s;
    }
-   
    .Logo:hover,
    .Logo:focus {
    opacity: 0.7;
@@ -237,29 +238,25 @@
    height: 60px;
    -webkit-backdrop-filter: blur(2px);
    backdrop-filter: blur(2px);
-   backgrund-color: rgba(0, 0, 0, 0.7);
    }
    .explore {
    font-family: Gill Sans;
-   font-weight: 199;
+   font-weight: 600;
    top: 50%;
    left: 50%;
    Z-index: 2;
    margin-top: -6px;
    color: white;
-   font-size: 32px;
+   font-size: 28px;
    position: absolute;
    transform: translate(-50%, -50%);
-   text-align: center
+   text-align: center;
    margin-left: 4px;
    text-decoration: none;
-   transition: margin-top .3s;
    cursor: default;
-   transition: opacity: 3s;
-   font-style: italic;
    opacity: 1;
+   min-width: 90%;
    }
-   
    .contact {
    margin-top: 38px;
    position: absolute;
@@ -351,45 +348,55 @@
    $("#btnButton1").click(myFunction);
    });
    
- $("a[href='#bottom']").click(function() {
+   $("a[href='#bottom']").click(function() {
    $("html, body").animate({
    scrollTop: $(document).height()
    }, "slow");
    return false;
    });
- 
+   
    
    $("a[href='#arrow']").click(function() {
    $("html, body").animate({
    scrollTop: $(window).height() *1
-   }, "slow");
+   }, "fast");
    return false;
    });
-
-  $("a[href='#find']").click(function() {
+   
+   $("a[href='#find']").click(function() {
    $("html, body").animate({
    scrollTop: $(window).height() *1
    }, "slow");
    return false;
    });
-
-$("a[href='#logo']").click(function() {
-   $("html, body").animate({
-   scrollTop: 0
-   }, "slow");
-   return false;
-   });
-
-$("a[href='#home']").click(function() {
+   
+   $("a[href='#logo']").click(function() {
    $("html, body").animate({
    scrollTop: 0
    }, "slow");
    return false;
    });
    
-
-
+   $("a[href='#home']").click(function() {
+   $("html, body").animate({
+   scrollTop: 0
+   }, "slow");
+   return false;
+   });
    
-</script>
-
-
+   /* test */
+   
+   function mijnFunction() {
+   if ($("#verse").is(":visible")) {
+   $("#verse").fadeIn("slow");
+   } else {
+   $("#verse").fadeIn("slow");
+   }
+   }
+   
+   $(function() {
+   $("#arrow").click(mijnFunction);
+   });
+   
+      
+</script  >
