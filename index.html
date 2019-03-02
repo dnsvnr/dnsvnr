@@ -19,14 +19,14 @@
       <img id="img" src="http://www.dnsvnr.com/Menu.png" width="24" height="24" class="Menu" />
       <div id="myDropdown" class="dropdown-content">
       <back class="twee" id="twee"> </back>
-         <a class="vier" href="/">Home</a>
-         <a class="vijf" id="functionid" href="#">Find</a>
+         <a class="vier" href="#home">Home</a>
+         <a class="vijf" id="functionid" href="#find">Find</a>
          <a class="zes" id="document" href="#bottom">Contact</a>
          
       </div>
    </div>
 <body>
-   <a href="/"><img src="http://www.dnsvnr.com/logo.png" class="Logo" width="32" height="32"/></a>
+   <a href="#logo"><img src="http://www.dnsvnr.com/logo.png" class="Logo" width="32" height="32"/></a>
 </body>
 <back class="background"></back>
 <nav class="fixedbar"></nav>
@@ -38,9 +38,9 @@
 <nav class="contactb"></nav>
 
 <img class="back" src="https://images.wallpaperscraft.com/image/starry_sky_milky_way_stars_night_118495_3840x2400.jpg">
-<a class=explore  href="http://www.dnsvnr.com/explore">find.</a>
+<a class=explore>FIND</a>
 
- <a href="index.html#arrow""> <img class="arrow" src="http://www.dnsvnr.com/img_229681.png" id-"arrow"> </a>
+ <a href="#arrow""> <img class="arrow" src="http://www.dnsvnr.com/img_229681.png" id-"arrow"> </a>
 <nav class="bar"> </nav>
 
 <style>
@@ -355,11 +355,33 @@
    }, "slow");
    return false;
    });
+ 
    
-   $("a[href='#']").click(function() {
+   $("a[href='#arrow']").click(function() {
+   $("html, body").animate({
+   scrollTop: 1000
+   }, "slow");
+   return false;
+   });
+
+  $("a[href='#find']").click(function() {
+   $("html, body").animate({
+   scrollTop: 1000
+   }, "slow");
+   return false;
+   });
+
+$("a[href='#logo']").click(function() {
    $("html, body").animate({
    scrollTop: 0
-   }, "fast");
+   }, "slow");
+   return false;
+   });
+
+$("a[href='#home']").click(function() {
+   $("html, body").animate({
+   scrollTop: 0
+   }, "slow");
    return false;
    });
    
