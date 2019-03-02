@@ -349,7 +349,7 @@
    $("#btnButton1").click(myFunction);
    });
    
-   $("a[href='#bottom']").click(function() {
+ $("a[href='#bottom']").click(function() {
    $("html, body").animate({
    scrollTop: $(document).height()
    }, "slow");
@@ -359,14 +359,14 @@
    
    $("a[href='#arrow']").click(function() {
    $("html, body").animate({
-   scrollTop: 1000
+   scrollTop: $(window).height() *1
    }, "slow");
    return false;
    });
 
   $("a[href='#find']").click(function() {
    $("html, body").animate({
-   scrollTop: 1000
+   scrollTop: $(window).height() *1
    }, "slow");
    return false;
    });
