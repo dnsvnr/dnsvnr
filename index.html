@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script type="text/javascript">
-<!--
-if (screen.width <= 699) {
-document.location = "mobile.html";
-}
-//-->
-</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title color="white"> dnsvnr </title>
@@ -58,7 +51,7 @@ document.location = "mobile.html";
         <onderkant>
           <textueel>
           <img class="hi"  >
-            <a class="text">  A camel, being the biggest animal in Israel at the time, going throuh a needle is beyond the realms of possibillity. Jesus portrays the impossible to show that God is capable of anything. For rich people it is impossible to put God first ("You cannot both serve God and money" - Luke 16:13 NIV) Jesus doesn't say you are not allowed, but you can not. One who is a true disciple of Jesus has to Choose: God or money.<br> <br>To understand this verse properly, we have to look a bit further. Matthew 19:25-26 says: "When the disciples heard this, they were greatly astonished and asked, “Who then can be saved?” Jesus looked at them and said, “With man this is impossible, but with God all things are possible.” The salvation is a work of God, not of man. Everybody can be saved by God, but from the conversation with the rich young man it is clear that this does not take away human responsibility. This again shows that the Bible is complete as a whole and needs to be read as such. <br> </a>
+            <a class="text">A camel, being the biggest animal in Israel at the time, going throuh a needle is beyond the realms of possibillity. Jesus portrays the impossible to show that God is capable of anything. For rich people it is impossible to put God first ("You cannot both serve God and money" - Luke 16:13 NIV) Jesus doesn't say you are not allowed, but you can not. One who is a true disciple of Jesus has to Choose: God or money.<br> <br>To understand this verse properly, we have to look a bit further. Matthew 19:25-26 says: "When the disciples heard this, they were greatly astonished and asked, “Who then can be saved?” Jesus looked at them and said, “With man this is impossible, but with God all things are possible.” The salvation is a work of God, not of man. Everybody can be saved by God. Even rich people, despite that seeming impossible at first. Although from the conversation with the rich young man it is clear that this does not take away human responsibility. This again shows that the Bible is complete as a whole and needs to be understood as such.  <br> </a>
           </textueel>
              <footer class="footer" id="footer">
       <center id="contactje" class="contactje"> Contact </center>
@@ -69,6 +62,10 @@ document.location = "mobile.html";
       <a href="http://www.instagram.com/dnsvnr" target="_blank"><img src="http://www.dnsvnr.com/insta.png"   class="insta" width="16" height="16"/></a>
       <nav class="contactb1" id="cb1"> </nav>
       <nav class="contactb2" id="cb2"></nav>
+      <flag class=flags>
+<a href="nl.html"><img class="flagnl" src="http://www.dnsvnr.com/nederlandse_vlag.jpg"> </a>
+      <a href="index.html"><img class="flaguk" src="http://www.dnsvnr.com/270px-Flag_of_the_United_Kingdom.svg.png"> </a>
+      </flag>
     </footer>
         </onderkant>
       </content>
@@ -85,6 +82,7 @@ document.location = "mobile.html";
    }
    onderkant
    {
+   margin-left: 10px;
    text-align: center;
    margin-left: 25%;
    max-width: 50%;
@@ -336,7 +334,7 @@ document.location = "mobile.html";
    footer {
    margin-bottom: 0;
    bottom: 0;
-   margin-top: 11px;
+   margin-top: 33px;
    left: 0;
    width: 100;
    min-width: 100%;
@@ -345,6 +343,46 @@ document.location = "mobile.html";
    z-index: 10;
    background-color: transparent;
    }
+   
+   .flagnl
+   {
+   position: absolute;
+   z-index: 11;
+   bottom: 0;
+   margin-bottom: 33px;
+   margin-left: -20%;
+   transform: translate(-50%, 0);
+   opacity: 1;
+   width: 17px;
+   height: 11px;
+   transition: opacity .3s;
+   }
+      .flaguk
+   {
+   position: absolute;
+   z-index: 11;
+   bottom: 0;
+   margin-bottom: 34px;
+   margin-left: 20%;
+   transform: translate(-50%, 0);
+   opacity: 1;
+   width: 17px;
+   height: 12px;
+   transition: opacity .3s;
+   }
+   
+   .flagnl:hover
+   {
+   opacity: 0.7;
+   transition: opacity .3s;
+   }
+   
+      .flaguk:hover
+   {
+   opacity: 0.7;
+   transition: opacity .3s;
+   }
+   
    .contactje {
    position: absolute;
    z-index: 11;
@@ -441,9 +479,9 @@ document.location = "mobile.html";
    background-color: transparent;
    max-width: 80%;
    }
-  </style>
-  <script>
-    
+</style>
+<script>
+  
 function myFunction() {
      if ($("#myDropdown").is(":visible")) {
      $("#myDropdown").fadeOut("fast");
